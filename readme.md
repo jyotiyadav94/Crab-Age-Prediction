@@ -1,19 +1,40 @@
-# About Dataset
+# Introduction
 
-## Context
-The dataset is used to estimate the age of the crab based on the physical attributes. 
-It's a great starting point for classical regression analysis and feature engineering to understand the impact of feature engineering in the Data Science domain.
+The objective of this project is to apply Object Oriented Programming(OOP) approach for Data Science problems.
+Object oriented programming is largely based on personal experience and is open to development. For this reason, code design can be improved according to the comments to be made for the kernel. Comments and criticisms will provide a better code design.
+This project consists of five classes:
 
-## Content
-Crab is very tasty, and many countries of the world import a huge amount of crabs for consumption every year. 
-The main benefits of crab farming are low labor cost, comparatively lower production cost, and fast growth. 
-Commercial crab farming business is developing the lifestyle of the people in coastal areas. By proper care and management, we can earn more from crab farming business than shrimp farming. 
-Mud crabs can be raised in two systems: Grow out farming and fattening systems.
+## Class I : HouseObjectOriented Class.
+1) Adds the data to the object.
+2) Concats the data in one DataFrame.
+3) Shows information about the data.
+4) Preprocess the data before Ml part.
+5) Adds the data after Preprocessing for the ML part.
 
-## Inspiration
-For a commercial crab farmer, knowing the right age of the crab helps them decide if and when to harvest the crabs. 
-Beyond a certain age, there is negligible growth in the crab's physical characteristics, so it is important to time the harvesting to reduce cost and increase profit. The goal of the dataset is:
+## Class II : Information Class.
+1) Calculates the missing values.
+2) Gets feature dtypes.
+3) Gets feature names.
+4) Gets shape of the data.
+5) Prints all of these information.
 
-- Exploratory data analysis: Understand how different physical features change with age.
-- Feature Engineering: Define new features using a combination of given data points to help improve model accuracy.
-- Regression Model: Build a regression model to predict the age of the crab.
+## Class III : Pre-processing Class.
+1) Drops the unwanted columns and rows.
+2) Fills the null values with (mean, meadian, zero,....etc).
+3) Applys feature engineering to the data like adding new columns, transforming columns,...etc.
+4) Encodes the data using label encoder to be able to apply ML algorithms.
+5) Converts your data to dummies values.
+6) Normalizes the data before ML.
+
+## Class IV : Preprocessor Class
+1) Applys the Pre_processing techniques and returns the new data.
+
+## Class V : ML Class
+1) Initializes the ML algorithms.
+2) Show the available ML algorithms.
+3) Applys Train-Test evaluation and shows the results.
+4) Applys Cross-Validation evaluation and shows the results.
+5) Visualizes the results of Train-Test and Cross-Validation evaluations.
+6) Find the best model and then fits it to the data.
+7) Show the Predictions in a DataFrame.
+8) Save the predictions to a csv file.
